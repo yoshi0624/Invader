@@ -37,7 +37,11 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate(new Vector3(0, 0, -moveSpeed) * Time.deltaTime);//ˆÚ“®‚Ì‚½‚ß‚ÌƒvƒƒOƒ‰ƒ€
         }
+<<<<<<< Updated upstream
     }
+=======
+
+>>>>>>> Stashed changes
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("enemy"))
@@ -51,4 +55,8 @@ public class PlayerMove : MonoBehaviour
     {
         SceneManager.LoadScene("End");
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
