@@ -23,22 +23,26 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D) && this.transform.position.x < xMax)
         {
-            transform.Translate(new Vector3(moveSpeed, 0, 0) * Time.deltaTime);//ˆÚ“®‚Ì‚½‚ß‚ÌƒvƒƒOƒ‰ƒ€
+
+
+            transform.Translate(new Vector3(moveSpeed, 0, 0) * Time.deltaTime);//é˜ï½»èœè¼”ï¿½ç¸ºæº˜ï½ç¸ºï½®ç¹åŠ±ÎŸç¹§ï½°ç¹ï½©ç¹
         }
         if (Input.GetKey(KeyCode.A) && this.transform.position.x > xMin)
         {
-            transform.Translate(new Vector3(-moveSpeed, 0, 0) * Time.deltaTime);//ˆÚ“®‚Ì‚½‚ß‚ÌƒvƒƒOƒ‰ƒ€
+            transform.Translate(new Vector3(-moveSpeed, 0, 0) * Time.deltaTime);//é˜ï½»èœè¼”ï¿½ç¸ºæº˜ï½ç¸ºï½®ç¹åŠ±ÎŸç¹§ï½°ç¹ï½©ç¹
         }
         if (Input.GetKey(KeyCode.W) && this.transform.position.z < zMax)
         {
-            transform.Translate(new Vector3(0, 0, moveSpeed) * Time.deltaTime);//ˆÚ“®‚Ì‚½‚ß‚ÌƒvƒƒOƒ‰ƒ€
+            transform.Translate(new Vector3(0, 0, moveSpeed) * Time.deltaTime);//é˜ï½»èœè¼”ï¿½ç¸ºæº˜ï½ç¸ºï½®ç¹åŠ±ÎŸç¹§ï½°ç¹ï½©ç¹
         }
         if (Input.GetKey(KeyCode.S) && this.transform.position.z > zMin)
         {
-            transform.Translate(new Vector3(0, 0, -moveSpeed) * Time.deltaTime);//ˆÚ“®‚Ì‚½‚ß‚ÌƒvƒƒOƒ‰ƒ€
+            transform.Translate(new Vector3(0, 0, -moveSpeed) * Time.deltaTime);//é˜ï½»èœè¼”ï¿½ç¸ºæº˜ï½ç¸ºï½®ç¹åŠ±ÎŸç¹§ï½°ç¹ï½©ç¹
 
         }
+
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("enemy"))
@@ -54,4 +58,8 @@ public class PlayerMove : MonoBehaviour
     }
 
 }
+
+
+
+
 
