@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D) && this.transform.position.x < xMax)
         {
+<<<<<<< Updated upstream
             transform.Translate(new Vector3(moveSpeed, 0, 0) * Time.deltaTime);//移動のためのプログラム
         }
         if (Input.GetKey(KeyCode.A) && this.transform.position.x > xMin)
@@ -36,6 +37,21 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.S) && this.transform.position.z > zMin)
         {
             transform.Translate(new Vector3(0, 0, -moveSpeed) * Time.deltaTime);//移動のためのプログラム
+=======
+            transform.Translate(new Vector3(moveSpeed, 0, 0) * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.A) && this.transform.position.x > xMin)
+        {
+            transform.Translate(new Vector3(-moveSpeed, 0, 0) * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.W) && this.transform.position.z < zMax)
+        {
+            transform.Translate(new Vector3(0, 0, moveSpeed) * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.S) && this.transform.position.z > zMin)
+        {
+            transform.Translate(new Vector3(0, 0, -moveSpeed) * Time.deltaTime);
+>>>>>>> Stashed changes
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -51,4 +67,8 @@ public class PlayerMove : MonoBehaviour
     {
         SceneManager.LoadScene("End");
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
