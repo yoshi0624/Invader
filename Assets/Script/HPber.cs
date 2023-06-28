@@ -18,7 +18,7 @@ public class HPber : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        //Enemyタグを設定しているオブジェクトに接触したとき
+      
         if (collider.gameObject.tag == "enemy")
         {
             //HPから1を引く
