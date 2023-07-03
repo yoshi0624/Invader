@@ -35,6 +35,10 @@ public class Enemymove : MonoBehaviour
              dataCs.score++;
              Destroy(this.gameObject);
         }
+        if (other.gameObject.CompareTag("Player"))
+        {
+             Destroy(this.gameObject);
+        }
     }
 }
 
