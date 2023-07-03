@@ -11,11 +11,13 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float xMin;
     [SerializeField] private float zMax;
     [SerializeField] private float zMin;
+    public int maxHealth = 5;
+    private int currentHealth;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -45,8 +47,14 @@ public class PlayerMove : MonoBehaviour
     {
         if (other.gameObject.CompareTag("enemy"))
         {
-            Destroy(this.gameObject);
-            Debug.Log("enemy");
+            {
+                currentHealth--;
+
+                if (currentHealth <= 0)
+                {
+                    Destroy(gameObject);
+                }
+            }
         }
     }
 

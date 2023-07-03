@@ -871,6 +871,7 @@ MonoBehaviour:
   xMin: -9
   zMax: 4
   zMin: -4
+  maxHealth: 5
 --- !u!54 &1708391266
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1124,9 +1125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1657328586103921512, guid: 2c4bdc8451de91f479df54c340d40baf, type: 3}
-  makeTime: 3
-  enemyZ: 3
-  enemyX: 13
+  makeTime: 1.7
+  enemyZ: 5
+  enemyX: 12
 --- !u!4 &1927840911
 Transform:
   m_ObjectHideFlags: 0
