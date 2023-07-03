@@ -18,7 +18,6 @@ public class HPber : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        
         if (collider.gameObject.tag == "enemy")
         {
             Hp = Hp - 1;
