@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HPber : MonoBehaviour
 {
-    int maxHp = 10;
+    int maxHp = 5;
     int Hp;
     public Slider slider;
 
@@ -18,13 +18,9 @@ public class HPber : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-      
         if (collider.gameObject.tag == "enemy")
         {
-            //HP‚©‚ç1‚ğˆø‚­
             Hp = Hp - 1;
-
-            //HP‚ğSlider‚É”½‰fB
             slider.value = (float)Hp / (float)maxHp; ;
 
         }
