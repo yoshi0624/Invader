@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
@@ -45,7 +46,7 @@ public class PlayerMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        if(other.gameObject.CompareTag("enemy"))
         {
             {
                 currentHealth--;
@@ -55,6 +56,14 @@ public class PlayerMove : MonoBehaviour
                     Destroy(gameObject);
                 }
             }
+        }
+        if(other.gameObject.CompareTag("Heal"))
+        {
+            if(currentHealth < 5)
+            {
+                currentHealth += 1;
+            }
+          
         }
     }
 

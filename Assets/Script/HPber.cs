@@ -24,6 +24,12 @@ public class HPber : MonoBehaviour
             slider.value = (float)Hp / (float)maxHp; ;
 
         }
+        if (collider.gameObject.tag == "Heal")
+        {
+            Hp = Hp + 1;
+            slider.value = (float)Hp / (float)maxHp; ;
+
+        }
     }
 
     // Update is called once per frame
