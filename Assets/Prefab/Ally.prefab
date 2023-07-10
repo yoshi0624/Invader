@@ -127,5 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba10284712e7c7b4889a535eaa03afb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allySpeed: -4
+  allySpeed: -2.5
   allyLifeTime: 5
