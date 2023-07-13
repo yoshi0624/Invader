@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealPrefab: {fileID: 3149387820204722670, guid: e98c9662a776e3b428969e1af96b6891, type: 3}
   makeTime: 10
-  HealZ: 5
+  HealZ: 5.5
   HealX: 10
 --- !u!4 &156191214
 Transform:
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1657328586103921512, guid: 2c4bdc8451de91f479df54c340d40baf, type: 3}
   makeTime: 2.4
-  enemyZ: 5
+  enemyZ: 5.5
   enemyX: 10
 --- !u!4 &336462296
 Transform:
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allyPrefab: {fileID: 8638806595836972774, guid: 5a6e555005ea1ce4fb6c69fdfd3550ad, type: 3}
   makeTime: 5
-  allyZ: 5
+  allyZ: 5.5
   allyX: 10
 --- !u!4 &408026327
 Transform:
@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1657328586103921512, guid: 2c4bdc8451de91f479df54c340d40baf, type: 3}
   makeTime: 1.3
-  enemyZ: 5
+  enemyZ: 5.5
   enemyX: 10
 --- !u!4 &1927840911
 Transform:
